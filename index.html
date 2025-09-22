@@ -110,7 +110,8 @@
     <footer>
       <div class="rsocial">INOVE CLOUD ASSESSORIA LTDA</div>
       <div class="row">CNPJ: 59.584.603/0001-20</div>
-      <div class="row">Rua Salvador Camargo, 302, Casa 1 – Vila São Paulo, Ferraz de Vasconcelos – SP</div>
+      <div class="row">Rua Salvador Camargo, 302, Casa 1 – Vila São Paulo, Ferraz de Vasconcelos – SP – CEP 08506-110
+      </div>
       <div class="row">E-mail: <a href="mailto:contato@inove.cloud">contato@inove.cloud</a></div>
       <small>© <span id="copyrightYear"></span> Inove Cloud</small>
     </footer>
@@ -118,6 +119,26 @@
   <script>
     document.getElementById('copyrightYear').textContent = new Date().getFullYear();
   </script>
+  <!-- JSON-LD para SEO e verificação da empresa -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "legalName": "INOVE CLOUD ASSESSORIA LTDA",
+      "name": "Inove Cloud",
+      "url": "https://inove.cloud",
+      "email": "contato@inove.cloud",
+      "taxID": "59.584.603/0001-20",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua Salvador Camargo, 302",
+        "addressLocality": "Ferraz de Vasconcelos",
+        "addressRegion": "SP",
+        "addressCountry": "BR",
+        "postalCode": "08506-110"
+      }
+    }
+    </script>
 </body>
 
 </html>
